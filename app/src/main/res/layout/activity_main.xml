@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.randomcard.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/images"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mine"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="50dp"
+            android:layout_above="@id/myImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yours"
+            android:textSize="30sp"
+            android:layout_above="@id/yourImage"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cards:"/>
+
+        <TextView
+            android:id="@+id/outputMyCards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="52"
+            android:textSize="30sp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Wins:"/>
+
+        <TextView
+            android:id="@+id/outputMyWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="65dp"
+            android:layout_height="87dp"
+            android:src="@drawable/cardback"
+            android:clickable="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="myImagePressed"/>
+
+        <ImageView
+            android:id="@+id/yourImage"
+            android:layout_width="65dp"
+            android:layout_height="87dp"
+            android:src="@drawable/cardback"
+            android:clickable="true"
+            android:layout_marginRight="20dp"
+            android:onClick="yourImagePressed"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cards:"/>
+
+            <TextView
+                android:id="@+id/outputYourCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="52"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wins:"/>
+
+            <TextView
+                android:id="@+id/outputYourWins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/images">
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
