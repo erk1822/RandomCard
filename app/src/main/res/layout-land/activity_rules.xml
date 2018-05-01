@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules:"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Each player starts with a deck of 52 cards, each randomly shuffled.
+A card from each player's deck is flipped over at the same time when one deck is clicked.
+If your card is greater than your opponent's you win your opponent's card, and vise versa.
+If the two cards are of equal values, war assumes whereby four cards from each player's deck are flipped over with the value of the fouth card determining who wins.
+The player who wins war wins all five cards. Each won card is placed on the bottom of the deck.
+The player who runs out of cards in their deck first loses."
+        android:textSize="15sp"
+        android:layout_below="@id/rules"
+        />
+
+    <LinearLayout
+        android:id="@+id/output_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/directions"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current cards you control: "
+            android:textSize="20sp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/outputMyCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoEnterAction"
+            android:text=""
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

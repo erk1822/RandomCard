@@ -47,24 +47,26 @@
             android:layout_height="wrap_content"
             android:text="Cards:"/>
 
-        <TextView
-            android:id="@+id/outputMyCards"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="52"
-            android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/outputMyCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoEnterAction"
+                android:text="52"
+                android:textSize="30sp" />
 
          <TextView
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="Wins:"/>
 
-        <TextView
-            android:id="@+id/outputMyWins"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/outputMyWins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoEnterAction"
+                android:text="0"
+                android:textSize="30sp" />
 
         </LinearLayout>
 
@@ -101,8 +103,9 @@
                 android:id="@+id/outputYourCards"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:imeOptions="flagNoEnterAction"
                 android:text="52"
-                android:textSize="30sp"/>
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -113,8 +116,9 @@
                 android:id="@+id/outputYourWins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:imeOptions="flagNoEnterAction"
                 android:text="0"
-                android:textSize="30sp"/>
+                android:textSize="30sp" />
 
         </LinearLayout>
 
@@ -133,9 +137,8 @@
         android:text="RULES"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/images"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:onClick="rulesButtonPressed"/>
-
 
 
 </RelativeLayout>
